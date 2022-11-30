@@ -5,7 +5,7 @@
     // adjust body font size
     function setBodyFontSize() {
         if (document.body) {
-            document.body.style.fontSize = (80 * dpr) + 'px'
+            document.body.style.fontSize = (10 * dpr) + 'px'
         }
         else {
             document.addEventListener('DOMContentLoaded', setBodyFontSize)
@@ -15,7 +15,7 @@
 
     // set 1rem = viewWidth / 10
     function setRemUnit() {
-        var rem = docEl.clientWidth / 50
+        var rem = docEl.clientWidth / 28
         docEl.style.fontSize = rem + 'px'
     }
 
