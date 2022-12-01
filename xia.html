@@ -1,32 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 创意菜单悬停动画</title>
-    <link rel="stylesheet" href="./stylexia.css">
-</head>
-<body>
-    <ul>
-        
-		<li style="--clr: #00ade1">
-            <a href="#" data-text="&nbsp;测试服下载">&nbsp;测试服下载&nbsp;</a>
-        </li>
-        <li style="--clr: #ff6493">
-            <a href="#" data-text="&nbsp;备用下载">&nbsp;备用下载&nbsp;</a>
-        </li>
-        <li style="--clr: #ffdd1c">
-            <a href="#" data-text="&nbsp;Services">&nbsp;Services&nbsp;</a>
-        </li>
-        <li style="--clr: #00dc82">
-            <a href="#" data-text="&nbsp;Team">&nbsp;Team&nbsp;</a>
-        </li>
-        <li style="--clr: #dc00d4">
-            <a href="#" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
-        </li>
-   
-
-   </ul>
-</body>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>垂直手风琴</title>
+		<!-- 事先引入好的字体图标库 源码会放在简介 自行下载即可 -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<ul class="accordion">
+			<li>
+				<!-- 单选框的id属性值和label 元素的for属性值相同时,就可以通过label
+				元素来选中单选框, 每个单选框都有一个相同name属性 -->
+				<!-- 这个属性主要作用是用来将单选框分类的,当每个name属性值相同时,那么这一组单选框就只能同时选中一个 -->
+				<input type="radio" name="item" id="item1" /><label for="item1"
+					>测试服下载<i class="fa fa-caret-right"></i
+				></label>
+				<ol>
+					<li>下载地址1</li>
+					<li>下载地址2</li>
+				</ol>
+			</li>
+			<li>
+				<input type="radio" name="item" id="item2" /><label for="item2"
+					>国服弹琴<i class="fa fa-caret-right"></i
+				></label>
+				<ol>
+					<li>下载地址1</li>
+					<li>下载地址2</li>					
+				</ol>
+			</li>
+			<li>
+				<input type="radio" name="item" id="item3" /><label for="item3"
+					>国际服下载<i class="fa fa-caret-right"></i
+				></label>
+				<ol>
+					<li>下载地址1</li>
+					<li>下载地址2</li>
+					
+				</ol>
+			</li>
+			<li>
+				<input type="radio" name="item" id="item4" /><label for="item4"
+					>国服高科技<i class="fa fa-caret-right"></i
+				></label>
+				<ol>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ol>
+			</li>
+		</ul>
+	</body>
 </html>
